@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: inventors
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  age        :integer
+#  hire_date  :date
+#  speciality :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: 1
+  hire_date: 2016-11-10
+  speciality: MyString
+
+two:
+  name: MyString
+  age: 1
+  hire_date: 2016-11-10
+  speciality: MyString

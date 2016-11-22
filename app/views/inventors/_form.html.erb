@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <%= form_for @inventor do |f| %>
+      <div class="col m6">
+        <%= f.label :name %>
+        <%= f.text_field :name, required: true %>
+      </div>
+      <div class="col m6">
+        <%= f.label :age %>
+        <%= f.number_field :age, min: 18, max: 100 %>
+      </div>
+      <div class="input-field col s12">
+        <%= f.label :speciality %>
+        <br />
+        <%= f.select :speciality, options_for_select(['software', 'hardware', 'education', 'mad']) %>
+      </div>
+      <%= f.submit class: "btn black white-text" %>
+    <% end %>
+  </div>
+</div>

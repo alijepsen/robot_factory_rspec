@@ -1,0 +1,13 @@
+<h1 class="center">Inventors</h1>
+<div class="center">
+  <%= link_to 'Add Inventor', new_inventor_path, class: "btn black white-text" %>
+</div>
+<hr />
+<ul class="collection">
+  <% @inventors.each do |inventor| %>
+    <li class="collection-item">
+      <%= link_to inventor.name, inventor_path(inventor) %>
+    </li>
+  <% end %>
+</ul>
+
